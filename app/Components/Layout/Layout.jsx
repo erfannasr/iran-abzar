@@ -6,7 +6,7 @@ function Layout({ children }) {
   return (
     <>
       <Header />
-      <div>
+      <div className="max-w-[1200px] m-auto">
       {children}
       </div>
       <Footer />

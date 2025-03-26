@@ -6,10 +6,10 @@
 
 html,
 body {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   overflow-x: hidden;
   margin: auto;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 a {
@@ -33,4 +33,14 @@ textarea {
   box-shadow: -15px 16px 0px 0px rgba(255, 80, 35, 0.07);
 -webkit-box-shadow: -15px 16px 0px 0px rgba(255, 80, 35, 0.07);
 -moz-box-shadow: -15px 16px 0px 0px rgba(255, 80, 35, 0.07);
+}
+.allProductsBtn{
+  background-color: rgba(255, 255, 255, 0.94);
+  color: rgba(255, 154, 46, 1);
+  border-radius: 6px;
+  border-color: rgba(216, 216, 216, 0.31);
+}
+.Grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }

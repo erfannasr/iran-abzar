@@ -1,48 +1,95 @@
 import Image from "next/image";
 import React from "react";
-import image1 from "../../../public/images/NewProducts/motorBargh.png";
-import image2 from "../../../public/images/NewProducts/motorBarghAstara.png";
-import image3 from "../../../public/images/NewProducts/dereil.png";
-import image4 from "../../../public/images/NewProducts/miniFerez.png";
+import image1 from "../../../public/images/Chainsaw/Chainsaw.png";
+import image2 from "../../../public/images/Chainsaw/image1.png";
+import image3 from "../../../public/images/Chainsaw/image2.png";
+import image4 from "../../../public/images/Chainsaw/image3.png";
+import image5 from "../../../public/images/Chainsaw/image4.png";
 
-function NewProducts() {
+
+function Chainsaw() {
   return (
-    <div className="mt-[50px]">
-      <div className="flex justify-between">
-        <div className="">
-          <div className=" text-red-500  ">
-            <span className="">پرفروشترین محصولات</span>
-          </div>
-        </div>
-        <div className="flex">
-          <span className="text-[#FF5023]">مشاهده همه</span>
-          <span className="mr-1">
-            <svg
-              width="25"
-              height="21"
-              viewBox="0 0 25 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M25 10.4114C25 10.981 24.5768 11.4516 24.0277 11.5261L23.875 11.5364L4.099 11.5355L11.2435 18.6508C11.6838 19.0892 11.6853 19.8015 11.2469 20.2418C10.8484 20.6421 10.2235 20.6797 9.78233 20.3539L9.65592 20.2452L0.580921 11.2092C0.522884 11.1514 0.472475 11.0889 0.429691 11.0228C0.417608 11.003 0.405308 10.9826 0.393646 10.9619C0.382919 10.9441 0.373228 10.9256 0.364082 10.907C0.351383 10.8798 0.338974 10.8517 0.327709 10.8231C0.318554 10.801 0.310911 10.7795 0.30394 10.7579C0.29565 10.7311 0.287598 10.7025 0.28067 10.6734C0.27552 10.6531 0.271442 10.6336 0.267883 10.614C0.262882 10.5849 0.258623 10.5547 0.255585 10.5242C0.252962 10.5009 0.251383 10.4779 0.250509 10.4548C0.250284 10.4408 0.25 10.4261 0.25 10.4114L0.250565 10.3678C0.251427 10.3458 0.252934 10.3237 0.255089 10.3017L0.25 10.4114C0.25 10.3404 0.256577 10.271 0.269152 10.2036C0.272068 10.1875 0.275543 10.171 0.279392 10.1546C0.287382 10.1207 0.296618 10.0881 0.307251 10.0561C0.312471 10.0402 0.318552 10.0233 0.32505 10.0064C0.338198 9.97257 0.352486 9.9403 0.368206 9.90887C0.375509 9.89409 0.383688 9.87862 0.392254 9.8633C0.406311 9.83831 0.420795 9.81457 0.43611 9.79142C0.446915 9.77504 0.458879 9.75799 0.471375 9.74121L0.48111 9.72824C0.511419 9.68865 0.5443 9.65112 0.579504 9.61592L0.580854 9.61487L9.65585 0.577371C10.0961 0.138942 10.8084 0.140417 11.2468 0.580665C11.6454 0.980891 11.6804 1.60596 11.3527 2.0457L11.2435 2.17165L4.102 9.28551L23.875 9.28641C24.4963 9.28641 25 9.79009 25 10.4114Z"
-                fill="#FF5023"
-              />
-            </svg>
+    <div className="bg-[#FF5D42] w-full  h-[640px]  rounded-[34px] mt-20">
+      <div className="flex justify-evenly   h-[200px]">
+        <div className="flex flex-col ">
+          <span className="font-[500] mt-7 text-[38px] text-[#FFFFFF]">
+            پرفروشترین اره برقی ها
           </span>
+          <button className="w-[236px] mt-4 h-[58px] bg-[#FFFFFFF0] rounded-[6px] border-[3px] border-[#D8D8D84F]">
+            <span className="text-[#FF5023] text-[20px] ">مشاهده همه محصولات</span>
+          </button>
+        </div>
+        <div className="translate-y-[-110px]">
+          <Image src={image1} alt="" className="w-[600px]  z-50 " />
         </div>
       </div>
-      <div className="flex justify-between mt-7">
-        {/* card #1  */}
+      <div className="flex justify-evenly mt-6">
 
-        <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[271px] h-[431px] p-4">
-          <div className="bg-[#E1E1E1] h-[181px] rounded-[15px] flex flex-col justify-center p-2 items-center">
-            <Image src={image1} alt="" />
+        {/* Card #1 */}
+      <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[250px] p-4">
+          <div className="bg-[#E1E1E1] h-[170px] rounded-[15px] flex flex-col justify-center p-2 items-center">
+            <Image src={image2} alt="" />
           </div>
           <div className=" ">
             <div className="text-center mb-1">
               <span className="text-[20px] text-[#212121] font-[500] tracking-[1px]  ">
-              کارواش رونیکس U100E
+              اره زنجیری بنزینی ادون
+              </span>
+            </div>
+
+            <span className="text-[#9C9C9C] font-[300] tracking-[1px] px-2">
+              ronix 2211 impact drill
+            </span>
+            <div className="flex justify-between mt-3 px-2">
+              <span className="text-[20px] text-[#212121] font-[500]">
+                قیمت:
+              </span>
+              <span className="text-[20px] text-[#212121] font-[500]">
+              ۲/۴۴۰/۰۰۰
+              </span>
+            </div>
+          </div>
+          <div className=" border-t-2 border-[#DEDEDE]  flex items-center justify-center">
+            <button className="flex items-center mt-[18px] justify-center bg-[#FF5023] w-[181px] h-[39px] rounded-[7px]"> 
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 4.5C6 4.91421 5.66421 5.25 5.25 5.25C4.83579 5.25 4.5 4.91421 4.5 4.5C4.5 3.04648 5.05253 1.90123 5.9236 1.12694C6.78087 0.364923 7.9027 0 9 0C10.0973 0 11.2191 0.364923 12.0764 1.12694C12.9475 1.90123 13.5 3.04648 13.5 4.5C13.5 4.91421 13.1642 5.25 12.75 5.25C12.3358 5.25 12 4.91421 12 4.5C12 3.45352 11.615 2.72377 11.0799 2.24806C10.5309 1.76008 9.7777 1.5 9 1.5C8.2223 1.5 7.46913 1.76008 6.92015 2.24806C6.38497 2.72377 6 3.45352 6 4.5Z"
+                  fill="white"
+                  fillOpacity="0.36"
+                />
+                <path
+                  d="M5.25 6.75C4.83579 6.75 4.5 7.08579 4.5 7.5C4.5 7.91421 4.83579 8.25 5.25 8.25H12.75C13.1642 8.25 13.5 7.91421 13.5 7.5C13.5 7.08579 13.1642 6.75 12.75 6.75H5.25Z"
+                  fill="white"
+                  fillOpacity="0.36"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M8.99999 18C16.1196 18 19.0865 17.25 17.6456 10.875C17.5881 10.6505 17.5327 10.4326 17.479 10.2211C16.1867 5.13267 15.8355 3.75 8.99999 3.75C2.16451 3.75 1.81335 5.13265 0.520991 10.221C0.467265 10.4325 0.411912 10.6505 0.354399 10.875C-1.08651 17.25 1.88035 18 8.99999 18ZM1.97901 10.5742C1.92608 10.7824 1.87091 10.9995 1.81289 11.2261C1.47623 12.7232 1.43979 13.7246 1.56896 14.3932C1.68496 14.9937 1.93117 15.3305 2.30888 15.5867C2.75325 15.888 3.47777 16.1391 4.64386 16.2967C5.79512 16.4524 7.23107 16.5 8.99999 16.5C10.7689 16.5 12.2049 16.4524 13.3561 16.2967C14.5222 16.1391 15.2468 15.888 15.6911 15.5867C16.0688 15.3305 16.315 14.9937 16.431 14.3932C16.5602 13.7246 16.5238 12.7232 16.1871 11.2261C16.1291 10.9995 16.0739 10.7825 16.021 10.5744C15.7374 9.45853 15.5183 8.59654 15.2702 7.87846C14.9809 7.04075 14.7069 6.57524 14.3981 6.27022C13.7953 5.67465 12.6119 5.25 8.99999 5.25C5.38807 5.25 4.20473 5.67465 3.60187 6.27022C3.29312 6.57523 3.01915 7.04075 2.72976 7.87846C2.4817 8.59652 2.26261 9.45846 1.97901 10.5742Z"
+                  fill="white"
+                />
+              </svg>
+              <span className="text-white">
+              افزودن به سبد خرید
+              </span>
+            </button>
+          </div>
+        </div>
+ {/* Card #2 */}
+        <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[250px] p-4">
+          <div className="bg-[#E1E1E1] h-[170px] rounded-[15px] flex flex-col justify-center p-2 items-center">
+            <Image src={image3} alt="" />
+          </div>
+          <div className=" ">
+            <div className="text-center mb-1">
+              <span className="text-[20px] text-[#212121] font-[500] tracking-[1px]  ">
+              اره زنجیری برقی رونیکس
               </span>
             </div>
 
@@ -90,144 +137,27 @@ function NewProducts() {
             </button>
           </div>
         </div>
-
-        {/* card #2 */}
-        <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[271px] h-[431px] p-4">
-          <div className="bg-[#E1E1E1] h-[181px] rounded-[15px] flex flex-col justify-center p-2 items-center">
-            <Image src={image2} alt="" />
-          </div>
-          <div className="  ">
-            <div className="text-center">
-              <span className="text-[20px] text-[#212121] font-[500] tracking-[1px]">
-              کارواش اینتیمکث مدل 2041
-
-              </span>
-            </div>
-
-            <span className="text-[#9C9C9C] font-[300] tracking-[1px]">
-              ronix 2211 impact drill
-            </span>
-            <div className="flex justify-between mt-3 px-2">
-              <span className="text-[20px] text-[#212121] font-[500] ">
-                قیمت:
-              </span>
-              <span className="text-[20px] text-[#212121] font-[500]">
-              ۶/۹۰۰/۰۰۰
-              </span>
-            </div>
-          </div>
-          <div className=" border-t-2 border-[#DEDEDE]  flex items-center justify-center">
-            <button className="flex mt-[18px]  items-center justify-center bg-[#FF5023] w-[181px] h-[39px] rounded-[7px]"> 
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 4.5C6 4.91421 5.66421 5.25 5.25 5.25C4.83579 5.25 4.5 4.91421 4.5 4.5C4.5 3.04648 5.05253 1.90123 5.9236 1.12694C6.78087 0.364923 7.9027 0 9 0C10.0973 0 11.2191 0.364923 12.0764 1.12694C12.9475 1.90123 13.5 3.04648 13.5 4.5C13.5 4.91421 13.1642 5.25 12.75 5.25C12.3358 5.25 12 4.91421 12 4.5C12 3.45352 11.615 2.72377 11.0799 2.24806C10.5309 1.76008 9.7777 1.5 9 1.5C8.2223 1.5 7.46913 1.76008 6.92015 2.24806C6.38497 2.72377 6 3.45352 6 4.5Z"
-                  fill="white"
-                  fillOpacity="0.36"
-                />
-                <path
-                  d="M5.25 6.75C4.83579 6.75 4.5 7.08579 4.5 7.5C4.5 7.91421 4.83579 8.25 5.25 8.25H12.75C13.1642 8.25 13.5 7.91421 13.5 7.5C13.5 7.08579 13.1642 6.75 12.75 6.75H5.25Z"
-                  fill="white"
-                  fillOpacity="0.36"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M8.99999 18C16.1196 18 19.0865 17.25 17.6456 10.875C17.5881 10.6505 17.5327 10.4326 17.479 10.2211C16.1867 5.13267 15.8355 3.75 8.99999 3.75C2.16451 3.75 1.81335 5.13265 0.520991 10.221C0.467265 10.4325 0.411912 10.6505 0.354399 10.875C-1.08651 17.25 1.88035 18 8.99999 18ZM1.97901 10.5742C1.92608 10.7824 1.87091 10.9995 1.81289 11.2261C1.47623 12.7232 1.43979 13.7246 1.56896 14.3932C1.68496 14.9937 1.93117 15.3305 2.30888 15.5867C2.75325 15.888 3.47777 16.1391 4.64386 16.2967C5.79512 16.4524 7.23107 16.5 8.99999 16.5C10.7689 16.5 12.2049 16.4524 13.3561 16.2967C14.5222 16.1391 15.2468 15.888 15.6911 15.5867C16.0688 15.3305 16.315 14.9937 16.431 14.3932C16.5602 13.7246 16.5238 12.7232 16.1871 11.2261C16.1291 10.9995 16.0739 10.7825 16.021 10.5744C15.7374 9.45853 15.5183 8.59654 15.2702 7.87846C14.9809 7.04075 14.7069 6.57524 14.3981 6.27022C13.7953 5.67465 12.6119 5.25 8.99999 5.25C5.38807 5.25 4.20473 5.67465 3.60187 6.27022C3.29312 6.57523 3.01915 7.04075 2.72976 7.87846C2.4817 8.59652 2.26261 9.45846 1.97901 10.5742Z"
-                  fill="white"
-                />
-              </svg>
-              <span className="text-white">
-              افزودن به سبد خرید
-              </span>
-            </button>
-          </div>
-        </div>
-
-        {/* card #3  */}
-
-        <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[271px] h-[431px] p-4">
-          <div className="bg-[#E1E1E1] h-[181px] rounded-[15px] flex flex-col justify-center p-2 items-center">
-            <Image src={image3} alt="" />
-          </div>
-          <div className="  ">
-            <div className="text-center">
-              <span className="text-[20px] text-[#212121] font-[500] tracking-[1px]">
-              دریل چکشی رونیکس۲۲۱۱
-              </span>
-            </div>
-
-            <span className="text-[#9C9C9C] font-[300] tracking-[1px]">
-              ronix 2211 impact drill
-            </span>
-            <div className="flex justify-between mt-3 px-2">
-              <span className="text-[20px] text-[#212121] font-[500]">
-                قیمت:
-              </span>
-              <span className="text-[20px] text-[#212121] font-[500]">
-                ۱/۵۸۰/۰۰۰
-              </span>
-            </div>
-          </div>
-          <div className=" border-t-2 border-[#DEDEDE]  flex items-center justify-center">
-            <button className="flex items-center mt-[18px] justify-center bg-[#FF5023] w-[181px] h-[39px] rounded-[7px]"> 
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 4.5C6 4.91421 5.66421 5.25 5.25 5.25C4.83579 5.25 4.5 4.91421 4.5 4.5C4.5 3.04648 5.05253 1.90123 5.9236 1.12694C6.78087 0.364923 7.9027 0 9 0C10.0973 0 11.2191 0.364923 12.0764 1.12694C12.9475 1.90123 13.5 3.04648 13.5 4.5C13.5 4.91421 13.1642 5.25 12.75 5.25C12.3358 5.25 12 4.91421 12 4.5C12 3.45352 11.615 2.72377 11.0799 2.24806C10.5309 1.76008 9.7777 1.5 9 1.5C8.2223 1.5 7.46913 1.76008 6.92015 2.24806C6.38497 2.72377 6 3.45352 6 4.5Z"
-                  fill="white"
-                  fillOpacity="0.36"
-                />
-                <path
-                  d="M5.25 6.75C4.83579 6.75 4.5 7.08579 4.5 7.5C4.5 7.91421 4.83579 8.25 5.25 8.25H12.75C13.1642 8.25 13.5 7.91421 13.5 7.5C13.5 7.08579 13.1642 6.75 12.75 6.75H5.25Z"
-                  fill="white"
-                  fillOpacity="0.36"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M8.99999 18C16.1196 18 19.0865 17.25 17.6456 10.875C17.5881 10.6505 17.5327 10.4326 17.479 10.2211C16.1867 5.13267 15.8355 3.75 8.99999 3.75C2.16451 3.75 1.81335 5.13265 0.520991 10.221C0.467265 10.4325 0.411912 10.6505 0.354399 10.875C-1.08651 17.25 1.88035 18 8.99999 18ZM1.97901 10.5742C1.92608 10.7824 1.87091 10.9995 1.81289 11.2261C1.47623 12.7232 1.43979 13.7246 1.56896 14.3932C1.68496 14.9937 1.93117 15.3305 2.30888 15.5867C2.75325 15.888 3.47777 16.1391 4.64386 16.2967C5.79512 16.4524 7.23107 16.5 8.99999 16.5C10.7689 16.5 12.2049 16.4524 13.3561 16.2967C14.5222 16.1391 15.2468 15.888 15.6911 15.5867C16.0688 15.3305 16.315 14.9937 16.431 14.3932C16.5602 13.7246 16.5238 12.7232 16.1871 11.2261C16.1291 10.9995 16.0739 10.7825 16.021 10.5744C15.7374 9.45853 15.5183 8.59654 15.2702 7.87846C14.9809 7.04075 14.7069 6.57524 14.3981 6.27022C13.7953 5.67465 12.6119 5.25 8.99999 5.25C5.38807 5.25 4.20473 5.67465 3.60187 6.27022C3.29312 6.57523 3.01915 7.04075 2.72976 7.87846C2.4817 8.59652 2.26261 9.45846 1.97901 10.5742Z"
-                  fill="white"
-                />
-              </svg>
-              <span className="text-white">
-              افزودن به سبد خرید
-              </span>
-            </button>
-          </div>
-        </div>
-        {/* card #4  */}
-
-        <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[271px] h-[431px] p-4">
-          <div className="bg-[#E1E1E1] h-[181px] rounded-[15px] flex flex-col justify-center p-2 items-center ">
+          {/* Card #3 */}
+        <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[250px] p-4">
+          <div className="bg-[#E1E1E1] h-[170px] rounded-[15px] flex flex-col justify-center p-2 items-center">
             <Image src={image4} alt="" />
           </div>
-          <div className="  ">
-            <div className="text-center mb-1">
-              <span className="text-[20px] text-[#212121] font-[500] tracking-[1px]">
-              دریل چکشی رونیکس۲۲۱۱
+          <div className=" ">
+            <div className="text-center mb-1 mt-4">
+              <span className="text-[20px]  text-[#212121] font-[500] tracking-[1px]  ">
+              اره زنجیری اشتیل MS230
               </span>
             </div>
 
-            <span className="text-[#9C9C9C] font-[300] tracking-[1px] ">
+            <span className="text-[#9C9C9C] font-[300] tracking-[1px] px-2">
               ronix 2211 impact drill
             </span>
-            <div className="flex justify-between  px-2 ">
-              <span className="text-[20px] text-[#212121] font-[500] ">
+            <div className="flex justify-between mt-3 px-2">
+              <span className="text-[20px] text-[#212121] font-[500]">
                 قیمت:
               </span>
               <span className="text-[20px] text-[#212121] font-[500]">
-              ۱/۵۸۰/۰۰۰
+              ۲/۲۰۰/۰۰۰
               </span>
             </div>
           </div>
@@ -263,9 +193,68 @@ function NewProducts() {
             </button>
           </div>
         </div>
+           
+      {/* Card #4 */}
+      <div className="bg-[#F9F9F9] flex flex-col justify-between rounded-[20px] w-[250px] p-4">
+          <div className="bg-[#E1E1E1] h-[170px] rounded-[15px] flex flex-col justify-center p-2 items-center">
+            <Image src={image5} alt="" />
+          </div>
+          <div className=" ">
+            <div className="text-center mb-1">
+              <span className="text-[20px] text-[#212121] font-[500] tracking-[1px]  ">
+              اره زنجیری شارژی بوش
+
+              </span>
+            </div>
+
+            <span className="text-[#9C9C9C] font-[300] tracking-[1px] px-2">
+              ronix 2211 impact drill
+            </span>
+            <div className="flex justify-between mt-3 px-2">
+              <span className="text-[20px] text-[#212121] font-[500]">
+                قیمت:
+              </span>
+              <span className="text-[20px] text-[#212121] font-[500]">
+              ۳/۵۸۰/۰۰۰
+              </span>
+            </div>
+          </div>
+          <div className=" border-t-2 border-[#DEDEDE]  flex items-center justify-center">
+            <button className="flex items-center mt-[18px] justify-center bg-[#FF5023] w-[181px] h-[39px] rounded-[7px]"> 
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 4.5C6 4.91421 5.66421 5.25 5.25 5.25C4.83579 5.25 4.5 4.91421 4.5 4.5C4.5 3.04648 5.05253 1.90123 5.9236 1.12694C6.78087 0.364923 7.9027 0 9 0C10.0973 0 11.2191 0.364923 12.0764 1.12694C12.9475 1.90123 13.5 3.04648 13.5 4.5C13.5 4.91421 13.1642 5.25 12.75 5.25C12.3358 5.25 12 4.91421 12 4.5C12 3.45352 11.615 2.72377 11.0799 2.24806C10.5309 1.76008 9.7777 1.5 9 1.5C8.2223 1.5 7.46913 1.76008 6.92015 2.24806C6.38497 2.72377 6 3.45352 6 4.5Z"
+                  fill="white"
+                  fillOpacity="0.36"
+                />
+                <path
+                  d="M5.25 6.75C4.83579 6.75 4.5 7.08579 4.5 7.5C4.5 7.91421 4.83579 8.25 5.25 8.25H12.75C13.1642 8.25 13.5 7.91421 13.5 7.5C13.5 7.08579 13.1642 6.75 12.75 6.75H5.25Z"
+                  fill="white"
+                  fillOpacity="0.36"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M8.99999 18C16.1196 18 19.0865 17.25 17.6456 10.875C17.5881 10.6505 17.5327 10.4326 17.479 10.2211C16.1867 5.13267 15.8355 3.75 8.99999 3.75C2.16451 3.75 1.81335 5.13265 0.520991 10.221C0.467265 10.4325 0.411912 10.6505 0.354399 10.875C-1.08651 17.25 1.88035 18 8.99999 18ZM1.97901 10.5742C1.92608 10.7824 1.87091 10.9995 1.81289 11.2261C1.47623 12.7232 1.43979 13.7246 1.56896 14.3932C1.68496 14.9937 1.93117 15.3305 2.30888 15.5867C2.75325 15.888 3.47777 16.1391 4.64386 16.2967C5.79512 16.4524 7.23107 16.5 8.99999 16.5C10.7689 16.5 12.2049 16.4524 13.3561 16.2967C14.5222 16.1391 15.2468 15.888 15.6911 15.5867C16.0688 15.3305 16.315 14.9937 16.431 14.3932C16.5602 13.7246 16.5238 12.7232 16.1871 11.2261C16.1291 10.9995 16.0739 10.7825 16.021 10.5744C15.7374 9.45853 15.5183 8.59654 15.2702 7.87846C14.9809 7.04075 14.7069 6.57524 14.3981 6.27022C13.7953 5.67465 12.6119 5.25 8.99999 5.25C5.38807 5.25 4.20473 5.67465 3.60187 6.27022C3.29312 6.57523 3.01915 7.04075 2.72976 7.87846C2.4817 8.59652 2.26261 9.45846 1.97901 10.5742Z"
+                  fill="white"
+                />
+              </svg>
+              <span className="text-white">
+              افزودن به سبد خرید
+              </span>
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   );
 }
 
-export default NewProducts;
+export default Chainsaw;

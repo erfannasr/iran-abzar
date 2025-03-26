@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 function Header() {
   return (
-    <div className="mt-[57px] flex justify-between items-center">
+    <div className="mt-[57px] flex w-[1200px] m-auto justify-between items-center">
       <div>
         <svg
           width="201"
